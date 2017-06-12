@@ -25,7 +25,7 @@ this.setState({palindrome: result});
 
     render() {
         return (
-            <div className="puzzleBox filterStringPB">
+            <div className="puzzleBox palindromePB">
                 <h4>Palindrome</h4>
                 <input className="inputLine" onChange={ (e) => {this.handleChange(e.target.value);} }/>
                 <button className="confirmationButton" onClick={ () => {this.palSolution(this.state.userInput);} }>Check</button>
