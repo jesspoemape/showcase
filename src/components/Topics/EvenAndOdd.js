@@ -37,8 +37,9 @@ class EvenAndOdd extends Component {
 
     render() {
         return (
-            <div className="puzzleBox evenAndOddPB">
+            <div className="puzzleBox">
                 <h4>Even and Odds</h4>
+                <p>Enter a list of numbers separated by a comma to be sorted by evens and odds.</p>
                 <input className="inputLine" onChange={ (e) => {this.handleChange(e.target.value);} }></input>
                 <button className="confirmationButton" onClick={ () => this.eoSolution(this.state.userInput) }>Split</button>
                 <span className="resultsBox">Evens: { JSON.stringify(this.state.evenArray) }</span>

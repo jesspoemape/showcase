@@ -28,8 +28,9 @@ sumSolution(number1, number2) {
 
     render() {
         return (
-            <div className="puzzleBox sumPB">
+            <div className="puzzleBox">
                 <h4>Sum</h4>
+                <p>Enter two numbers to get their sum.</p>
                 <input className="inputLine" onChange={ (e) => {this.handleChange1(e.target.value);} }/>
                 <input className="inputLine" onChange={ (e) => {this.handleChange2(e.target.value)} }/>
                 <button className="confirmationButton" onClick={ () => this.sumSolution(this.state.number1, this.state.number2) }>Add</button>

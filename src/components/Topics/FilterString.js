@@ -18,7 +18,6 @@ fsSolution(userInput) {
     var nArr = [];
     var input = this.state.userInput;
     var testArr = this.state.names;
-    console.log(input);
     for (var i = 0; i < testArr.length; i++) {
         if(testArr[i].includes(input)) {
             nArr.push(testArr[i]);
@@ -30,8 +29,9 @@ fsSolution(userInput) {
 
     render() {
         return (
-            <div className="puzzleBox filterStringPB">
+            <div className="puzzleBox">
                 <h4>Filter String</h4>
+                <p>Type a name or a partial name to filter matching names from the list (case sensitive).</p>
                 <span className="puzzleText">Names: { JSON.stringify(this.state.names) }</span>
                 <input className="inputLine" onChange={ (e) => {this.handleChange(e.target.value); } }/>
                 <button className="confirmationButton" onClick={ () => {this.fsSolution()} }>Filter</button>
