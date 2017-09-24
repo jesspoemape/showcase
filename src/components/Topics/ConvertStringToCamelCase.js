@@ -33,12 +33,14 @@ solution() {
     }
     else if (str.includes("-")) {
         this.setState({
-            result: capitalizeFirstLetter(str.split("-")).join("")
+            result: capitalizeFirstLetter(str.split("-")).join(""),
+            userInput: ''
         });
     }
     else if (str.includes("_")) {
         this.setState({
-            result: capitalizeFirstLetter(str.split("_")).join("")
+            result: capitalizeFirstLetter(str.split("_")).join(""),
+            userInput: ''
         });
     }
 }

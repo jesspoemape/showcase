@@ -30,28 +30,6 @@ body {
   margin-right: 0px;
 }
 
-.evenAndOddPB {
-  height: 100%;
-  padding-bottom: 20px;
-}
-
-.filterObjectPB {
-  height: 100%;
-  padding-bottom: 
-}
-
-.filterStringPB {
-  height: 350px;
-}
-
-.palindromePB {
-  height: 225px;
-}
-
-.sumPB {
-  height: 270px;
-}
-
  .resultsBox {
   width: 360px;
   height: 20px;
